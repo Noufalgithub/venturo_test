@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../../modules/home/controllers/home_controller.dart';
+import '../../data/models/pengajuan_model.dart';
 
 class DetailRiwayatPengajuanView extends GetView {
   const DetailRiwayatPengajuanView(this.pengajuan, {super.key});

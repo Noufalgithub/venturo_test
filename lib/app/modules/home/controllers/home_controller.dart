@@ -1,7 +1,8 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import '../../../data/models/lapiran_model.dart';
+import '../../../data/models/pengajuan_model.dart';
 
 class HomeController extends GetxController {
   var selectedDate = Rxn<DateTime>();
@@ -63,31 +64,4 @@ class HomeController extends GetxController {
       backgroundColor: Colors.green,
     );
   }
-}
-
-// ===================== MODEL =====================
-class Lampiran {
-  final List<File> buktiFoto;
-  final String nominal;
-  final String keterangan;
-
-  Lampiran({
-    required this.buktiFoto,
-    required this.nominal,
-    required this.keterangan,
-  });
-}
-
-class Pengajuan {
-  final DateTime tanggal;
-  final String jenisKlaim;
-  final String detail;
-  final List<Lampiran> lampiran;
-
-  Pengajuan({
-    required this.tanggal,
-    required this.jenisKlaim,
-    required this.detail,
-    required this.lampiran,
-  });
 }

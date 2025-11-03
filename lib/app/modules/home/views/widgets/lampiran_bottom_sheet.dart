@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:venturo_test/app/modules/home/controllers/home_controller.dart';
 
+import '../../../../data/models/lapiran_model.dart';
+
 void openLampiranBottomSheet(BuildContext context) {
   final nominalController = TextEditingController();
   final keteranganController = TextEditingController();
